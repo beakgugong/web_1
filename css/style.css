@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    color: #3f464d;
+    font-family: "Spoqa Han Sans Neo", "Sans-serif";
+
+}
+
+a {
+    all:unset;
+}
+
+a:link {
+    text-decoration: none;
+    color:#3f464d;
+}
+
+a:visited {
+    text-decoration:none;
+    color: #3f464d;
+
+}
+
+a:active {
+    text-decoration:none;
+    color: #3f464d;
+
+}
+
+a:hover {
+    text-decoration:none;
+    color: #3f464d;
+
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.head-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.head-container .head-intro {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.head-container .head-intro a:hover {
+    color: #2186c4;
+    cursor: pointer;
+}
+
+
+.head-container .head-mail {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+section {
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+
+.main {
+    height: 290px;
+    background-image: url("https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxODAxMTlfMjA4%2FMDAxNTE2MzUyMTE2NzQ0.ssAImWRqf-ovlIkPYtKwR3vboaePXFvfdKEtqeN4YxEg.HRg4aYdFG0NqLMXKwkSAI_uGh67ZIUZS-HBtsFzYvwog.PNG.psungbai%2Fimage.png&type=sc960_832");
+    background-size: cover;
+    background-position: center 45%;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    background-color:#D99E6A;
+    opacity: 0.6;
+    z-index: 2;
+    margin-top: 60px;
+}
+
+.title-container {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.8rem;
+}
+
+.message {
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: black;
+    line-height: 2rem;
+}
+
+.skill-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skill {
+    width: 25%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 9px;
+    padding: 0.5rem 1rem;
+    margin: 0.7rem;
+    box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, .2);
+    transition: 0.4s;
+}
+
+.skill:hover{
+    transform: translate(0,-5px);
+}
+
+.skill-icon {
+    font-size: 2.0rem;
+    margin: 0 10px;
+}
+
+.skill-title {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.skill-name {
+    font: bold;
+    color: gray;
+    margin-bottom: 0.2rem;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.python-stlye {
+    color: saddlebrown;
+}
+
+.archi-stlye{
+    color:#F2F2F0;
+}
+.bac-stlye{
+    color: slateblue;
+}
+
+.roadmap-container{
+    width: 100%;
+    margin-top: 4rem;
+}
+.roadmap-title-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.roadmap-title{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #545e6f;
+}
+.arrow-container {
+    font-size: 2rem;
+    cursor :pointer;
+    color: rgb(47,48,89);
+}
+
+.class-list {
+    display: flex;
+    list-style: none;;
+    padding: 1rem 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.class-card {
+   max-width: 240px;
+    box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, .2);
+    border-radius: 8px;
+    margin: 0 10px;
+    transition: 0.4s;
+    flex-shrink: 0;
+}
+
+.class-card:hover{
+    box-shadow: 10px 10px 10px 0px rgba(25, 42, 70, .2);
+    transform: translate(0,-5px);   
+}
+.class-img {
+    width: 240px;
+    border-radius: 8px 8px 0 0;
+    height: 150px;
+}
+
+.class-container {
+    width: 100%;
+    padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.class-skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.class-type {
+    font-size: 0.8rem;
+    
+}
+
+.class-format {
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: rgb(65, 225, 100);
+    padding: 0.2rem;
+}
+
+footer {
+    border-top: 1px solid #e4e4e4;
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+.footer-message{
+    font-weight: bold;
+    color: black;
+    margin: 0.3rem 0.5rem;
+}
+
+.footer-contact{
+    color: black;
+    margin: 0 0.5rem;
+}
+
+.footer-copyright{
+    color: black;
+    margin: 1rem 0.5rem;
+}
+@media only screen and (min-width:1200px) {
+    .inner {
+        max-width: 1200px;
+    }
+}
+
+@media only screen and (max-width:980px) {
+    .skill-container{
+        display: none;
+    }
+}
+    
